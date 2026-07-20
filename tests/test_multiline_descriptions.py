@@ -41,6 +41,11 @@ class MultilineDescriptionTests(unittest.TestCase):
             ),
         )
 
+    def test_from_section_keeps_brand_and_identifies_sole_trader(self):
+        self.assertIn('<div class="co">ALLFJ AI</div>', HTML)
+        self.assertIn('${esc(settings.supplierName)} · Sole Trader', HTML)
+        self.assertIn('ABN ${esc(settings.abn)}', HTML)
+
 
 if __name__ == "__main__":
     unittest.main()
