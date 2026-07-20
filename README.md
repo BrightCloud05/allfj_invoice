@@ -8,6 +8,8 @@ no dependencies, works offline.
 Double-click **`index.html`** (opens in your browser). That's it.
 
 - **Left pane** — fill in client, dates, line items, payment details, notes.
+  Each line item includes a multiline detailed-description field; line breaks and
+  bullet-style lists are preserved in the invoice preview and exported PDF.
 - **Right pane** — live A4 preview, updates as you type.
 - **Export PDF** — opens the browser print dialog. Choose *Save as PDF*.
   The print output is a clean single A4 page (form/toolbar are hidden).
